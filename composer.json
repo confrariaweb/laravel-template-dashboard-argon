@@ -1,0 +1,35 @@
+{
+    "name": "confrariaweb/laravel-template-dashboard-argon",
+    "version": "dev-master",
+    "description": "Laravel template package dashboard argon",
+    "keywords": [
+        "template",
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "require": {
+        "confrariaweb/laravel-template": "dev-master",
+        "laravelcollective/html": ">=6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConfrariaWeb\\TemplateDashboardArgon\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConfrariaWeb\\TemplateDashboardArgon\\Providers\\TemplateDashboardArgonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
