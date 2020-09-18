@@ -42,6 +42,24 @@
                 </ul>
                 <hr class="my-3">
                 <h6 class="navbar-heading p-0 text-muted">
+                    <span class="docs-normal">Financeiro</span>
+                </h6>
+                <ul class="navbar-nav mb-md-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.invoices.index') }}">
+                            <i class="ni ni-spaceship"></i>
+                            <span class="nav-link-text">Faturas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.payment-methods.index') }}">
+                            <i class="ni ni-spaceship"></i>
+                            <span class="nav-link-text">Meios de Pagamentos</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                <h6 class="navbar-heading p-0 text-muted">
                     <span class="docs-normal">Documentação</span>
                 </h6>
                 <ul class="navbar-nav mb-md-3">

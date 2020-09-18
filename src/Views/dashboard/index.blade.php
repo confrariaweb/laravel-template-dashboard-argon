@@ -1,5 +1,5 @@
-@extends(config('cw_entrust.layout'))
-@section('title', __('entrust::titles.permissions'))
+@extends(config('cw_acl.layout'))
+@section('title', __('acl::titles.permissions'))
 @section('content')
 
     <div class="row">

@@ -1,4 +1,4 @@
-@extends(config('cw_entrust.layout'))
+@extends(config('cw_acl.layout'))
 @section('title', __('templateDashboardArgon::admin.users.show'))
 @section('content')
     <div class="row">

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/template-dashboard-argon/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/template-dashboard-argon/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css') }}">
     @stack('styles')
-    <link rel="stylesheet" href="{{ asset('vendor/template-dashboard-argon/css/argon.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('vendor/template-dashboard-argon/css/argon.min.css') }}" type="text/css">
 </head>
 
 <body>

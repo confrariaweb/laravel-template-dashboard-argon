@@ -1,4 +1,4 @@
-@extends(config('cw_entrust.layout'))
+@extends(config('cw_acl.layout'))
 @section('title', __('templateDashboardArgon::admin.roles.edit'))
 @section('content')
     <div class="row">
@@ -12,7 +12,7 @@
                 </div>
                 <div class="card-body">
                     {!! Form::model($role, ['route' => ['admin.roles.update', $role->id], 'method' => 'put', 'id' => 'formEditRole']) !!}
-                    @include('entrust::roles.partials.form')
+                    @include('acl::roles.partials.form')
                     {!! Form::close() !!}
                 </div>
                 <div class="card-footer text-right">

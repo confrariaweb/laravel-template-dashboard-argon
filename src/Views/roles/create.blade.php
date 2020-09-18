@@ -1,4 +1,4 @@
-@extends(config('cw_entrust.layout'))
+@extends(config('cw_acl.layout'))
 @section('title', __('templateDashboardArgon::admin.roles.create'))
 @section('content')
     <div class="row">
@@ -11,7 +11,7 @@
                 </div>
                 <div class="card-body">
                     {!! Form::open(['route' => 'admin.roles.store', 'id' => 'formCreateRole']) !!}
-                    @include('entrust::roles.partials.form')
+                    @include('acl::roles.partials.form')
                     {!! Form::close() !!}
                 </div>
                 <div class="card-footer text-right">

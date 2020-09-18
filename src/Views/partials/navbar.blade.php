@@ -76,7 +76,7 @@
                                 <span class="shortcut-media avatar rounded-circle bg-gradient-red">
                                     <i class="ni ni-calendar-grid-58"></i>
                                 </span>
-                                <small>Calendar</small>
+                                <small>Calendario</small>
                             </a>
                             <a href="#!" class="col-4 shortcut-item">
                                 <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
@@ -88,25 +88,25 @@
                                 <span class="shortcut-media avatar rounded-circle bg-gradient-info">
                                     <i class="ni ni-credit-card"></i>
                                 </span>
-                                <small>Payments</small>
+                                <small>Faturas</small>
                             </a>
                             <a href="#!" class="col-4 shortcut-item">
                                 <span class="shortcut-media avatar rounded-circle bg-gradient-green">
                                     <i class="ni ni-books"></i>
                                 </span>
-                                <small>Reports</small>
-                            </a>
-                            <a href="#!" class="col-4 shortcut-item">
-                                <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
-                                    <i class="ni ni-pin-3"></i>
-                                </span>
-                                <small>Maps</small>
+                                <small>Relatórios</small>
                             </a>
                             <a href="#!" class="col-4 shortcut-item">
                                 <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
                                     <i class="ni ni-basket"></i>
                                 </span>
-                                <small>Shop</small>
+                                <small>Planos</small>
+                            </a>
+                            <a href="{{ route('admin.payment-method-users.index') }}" class="col-4 shortcut-item">
+                                <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                                    <i class="ni ni-credit-card"></i>
+                                </span>
+                                <small>Cartões</small>
                             </a>
                         </div>
                     </div>
