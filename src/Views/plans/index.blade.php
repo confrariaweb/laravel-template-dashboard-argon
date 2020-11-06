@@ -1,5 +1,5 @@
 @extends(config('cw_account.layout'))
-@section('title', __('templateDashboardArgon::admin.plans.index'))
+@section('title', __('templateDashboardArgon::dashboard.plans.index'))
 @section('content')
     <div class="row justify-content-center">
         <div class="col-12">

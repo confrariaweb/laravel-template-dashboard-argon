@@ -1,5 +1,5 @@
-@extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.permissions.create'))
+@extends('templateDashboardArgon::layouts.app')
+@section('title', __('templateDashboardArgon::dashboard.permissions.create'))
 @section('content')
     <div class="row">
         <div class="col-6">

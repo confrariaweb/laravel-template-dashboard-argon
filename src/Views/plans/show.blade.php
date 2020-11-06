@@ -1,12 +1,12 @@
 @extends(config('cw_account.layout'))
-@section('title', __('templateDashboardArgon::admin.plans.show'))
+@section('title', __('templateDashboardArgon::dashboard.plans.show'))
 @section('content')
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.plans.show') }}
+                        {{ __('templateDashboardArgon::dashboard.plans.show') }}
                         [{{ $plan->title }}]
                     </h3>
                 </div>
@@ -18,7 +18,7 @@
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
                         <a href="{{ route('admin.plans.edit', $plan->id) }}" class="btn btn-primary">
-                            {{ __('templateDashboardArgon::admin.plans.edit') }}
+                            {{ __('templateDashboardArgon::dashboard.plans.edit') }}
                         </a>
                     </div>
                 </div>

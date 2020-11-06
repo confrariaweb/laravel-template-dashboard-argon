@@ -1,4 +1,4 @@
-@extends(config('cw_acl.layout'))
+@extends('templateDashboardArgon::layouts.app')
 @section('title', __('acl::titles.permissions'))
 @section('content')
 

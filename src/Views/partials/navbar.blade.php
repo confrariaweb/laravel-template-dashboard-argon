@@ -45,7 +45,7 @@
                                 <a href="#!" class="list-group-item list-group-item-action">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                            <img alt="Image placeholder" src="{{ asset('vendor/template-dashboard-argon/img/theme/team-1.jpg') }}" class="avatar rounded-circle">
+                                            <img alt="Image placeholder" src="{{ asset('vendor/confrariaweb/template-dashboard-argon/img/theme/team-1.jpg') }}" class="avatar rounded-circle">
                                         </div>
                                         <div class="col ml--2">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -118,7 +118,7 @@
                         aria-expanded="false">
                         <div class="media align-items-center">
                             <span class="avatar avatar-sm rounded-circle">
-                                <img alt="Image placeholder" src="{{ asset('vendor/template-dashboard-argon/img/theme/team-4.jpg') }}">
+                                <img alt="Image placeholder" src="{{ asset('vendor/confrariaweb/template-dashboard-argon/img/theme/team-4.jpg') }}">
                             </span>
                             <div class="media-body  ml-2  d-none d-lg-block">
                                 <span class="mb-0 text-sm  font-weight-bold">

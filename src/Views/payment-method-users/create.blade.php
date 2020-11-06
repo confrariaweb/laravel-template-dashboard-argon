@@ -1,5 +1,5 @@
 @extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.payment-method-users.create'))
+@section('title', __('templateDashboardArgon::dashboard.payment-method-users.create'))
 @section('content')
     <div class="row">
         <div class="col-6">

@@ -1,12 +1,12 @@
-@extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.permissions.show'))
+@extends('templateDashboardArgon::layouts.app')
+@section('title', __('templateDashboardArgon::dashboard.permissions.show'))
 @section('content')
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.permissions.show') }} 
+                        {{ __('templateDashboardArgon::dashboard.permissions.show') }}
                         [{{ $permission->display_name }}]
                     </h3>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
                         <a href="{{ route('admin.permissions.edit', $permission->id) }}" class="btn btn-primary">
-                            {{ __('templateDashboardArgon::admin.permissions.edit') }}
+                            {{ __('templateDashboardArgon::dashboard.permissions.edit') }}
                         </a>
                     </div>
                 </div>

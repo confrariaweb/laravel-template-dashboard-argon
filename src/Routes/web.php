@@ -4,10 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['web', 'auth'])
     ->namespace('ConfrariaWeb\TemplateDashboardArgon\Controllers')
-    ->prefix('admin')
-    ->name('dashboards')
     ->group(function () {
 
-        Route::get('/', 'TemplateDashboardArgonController@index');
+        Route::get('admin', 'TemplateDashboardArgonController@index');
+        Route::get('dashboard', 'TemplateDashboardArgonController@index')->name('dashboard');
 
     });

@@ -1,12 +1,12 @@
 @extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.users.show'))
+@section('title', __('templateDashboardArgon::dashboard.users.show'))
 @section('content')
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.users.show') }}
+                        {{ __('templateDashboardArgon::dashboard.users.show') }}
                         [{{ $user->name }}]
                     </h3>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
                         <a href="{{ route('admin.users.edit', $user->id) }}" class="btn btn-primary">
-                            {{ __('templateDashboardArgon::admin.users.edit') }}
+                            {{ __('templateDashboardArgon::dashboard.users.edit') }}
                         </a>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
 @extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.roles.show'))
+@section('title', __('templateDashboardArgon::dashboard.roles.show'))
 @section('content')
     <div class="row">
         <div class="col">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.roles.show') }}
+                        {{ __('templateDashboardArgon::dashboard.roles.show') }}
                         [{{ $role->display_name }}]
                     </h3>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
                         <a href="{{ route('admin.roles.edit', $role->id) }}" class="btn btn-primary">
-                            {{ __('templateDashboardArgon::admin.roles.edit') }}
+                            {{ __('templateDashboardArgon::dashboard.roles.edit') }}
                         </a>
                     </div>
                 </div>

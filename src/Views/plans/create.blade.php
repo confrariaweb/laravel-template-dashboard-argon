@@ -1,12 +1,12 @@
 @extends(config('cw_account.layout'))
-@section('title', __('templateDashboardArgon::admin.plans.create'))
+@section('title', __('templateDashboardArgon::dashboard.plans.create'))
 @section('content')
     <div class="row">
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.plans.create') }}
+                        {{ __('templateDashboardArgon::dashboard.plans.create') }}
                     </h3>
                 </div>
                 <div class="card-body">
@@ -16,9 +16,9 @@
                 </div>
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
-                        {!! Form::submit(__('templateDashboardArgon::admin.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formCreatePlans\').submit();']) !!}
+                        {!! Form::submit(__('templateDashboardArgon::dashboard.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formCreatePlans\').submit();']) !!}
                         <a href="{{ route('admin.plans.index') }}" class="btn btn-secondary">
-                            {{ __('templateDashboardArgon::admin.buttons.cancel') }}
+                            {{ __('templateDashboardArgon::dashboard.buttons.cancel') }}
                         </a>
                     </div>
                 </div>

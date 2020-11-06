@@ -1,12 +1,12 @@
 @extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.roles.edit'))
+@section('title', __('templateDashboardArgon::dashboard.roles.edit'))
 @section('content')
     <div class="row">
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.roles.edit') }}
+                        {{ __('templateDashboardArgon::dashboard.roles.edit') }}
                         [{{ $role->display_name }}]
                     </h3>
                 </div>
@@ -17,9 +17,9 @@
                 </div>
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
-                        {!! Form::submit(__('templateDashboardArgon::admin.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formEditRole\').submit();']) !!}
+                        {!! Form::submit(__('templateDashboardArgon::dashboard.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formEditRole\').submit();']) !!}
                         <a href="{{ route('admin.roles.index') }}" class="btn btn-secondary">
-                            {{ __('templateDashboardArgon::admin.buttons.cancel') }}
+                            {{ __('templateDashboardArgon::dashboard.buttons.cancel') }}
                         </a>
                     </div>
                 </div>

@@ -25,19 +25,52 @@ return [
         'show' => 'Visualizar meio de pagamento'
     ],
 
+    'sites' => [
+        'index' => 'Sites',
+        'create' => 'Novo site',
+        'edit' => 'Editar o site',
+        'show' => 'Visualizar o site'
+    ],
+
+    'domains' => [
+        'index' => 'Dominios',
+        'create' => 'Novo dominio',
+        'edit' => 'Editar o dominio',
+        'show' => 'Visualizar o dominio'
+    ],
+
+    'posts' => [
+        'index' => 'Postagens',
+        'create' => 'Nova postagem',
+        'edit' => 'Editar a postagem',
+        'show' => 'Visualizar a postagem',
+        'categories' => [
+            'index' => 'Categorias de Postagens',
+            'create' => 'Nova categoria de postagem',
+            'edit' => 'Editar a categoria de postagem',
+            'show' => 'Visualizar a categoria de postagem'
+        ],
+        'sections' => [
+            'index' => 'Seções de Postagens',
+            'create' => 'Nova seção de postagem',
+            'edit' => 'Editar a seção de postagem',
+            'show' => 'Visualizar a seção de postagem'
+        ],
+    ],
+
     'invoices' => [
         'index' => 'Faturas',
         'create' => 'Nova fatura',
         'edit' => 'Editar a fatura',
         'show' => 'Visualizar a fatura'
     ],
-    'user' => 'Usuário',
     'plans' => [
         'index' => 'Planos',
         'create' => 'Novo Plano',
         'edit' => 'Editar Plano',
         'show' => 'Visualizar Plano'
     ],
+    'user' => 'Usuário',
     'users' => [
         'index' => 'Usuários',
         'create' => 'Novo Usuário',

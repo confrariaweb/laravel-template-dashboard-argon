@@ -1,12 +1,12 @@
 @extends(config('cw_acl.layout'))
-@section('title', __('templateDashboardArgon::admin.permissions.create'))
+@section('title', __('templateDashboardArgon::dashboard.permissions.create'))
 @section('content')
     <div class="row">
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
                     <h3 class="mb-0">
-                        {{ __('templateDashboardArgon::admin.permissions.create') }}
+                        {{ __('templateDashboardArgon::dashboard.permissions.create') }}
                     </h3>
                 </div>
                 <div class="card-body">
@@ -16,9 +16,9 @@
                 </div>
                 <div class="card-footer text-right">
                     <div class="btn-group" role="group" aria-label="Basic">
-                        {!! Form::submit(__('templateDashboardArgon::admin.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formCreatePermission\').submit();']) !!}
+                        {!! Form::submit(__('templateDashboardArgon::dashboard.buttons.save'), ['class' => 'btn btn-primary', 'onClick' => 'document.getElementById(\'formCreatePermission\').submit();']) !!}
                         <a href="{{ route('admin.permissions.index') }}" class="btn btn-secondary">
-                            {{ __('templateDashboardArgon::admin.buttons.cancel') }}
+                            {{ __('templateDashboardArgon::dashboard.buttons.cancel') }}
                         </a>
                     </div>
                 </div>

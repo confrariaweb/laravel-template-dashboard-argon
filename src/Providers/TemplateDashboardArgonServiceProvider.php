@@ -13,7 +13,7 @@ class TemplateDashboardArgonServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/../Translations', 'templateDashboardArgon');
         $this->loadViewsFrom(__DIR__ . '/../Views', 'templateDashboardArgon');
         $this->publishes([
-            __DIR__ . '/../../public' => public_path('vendor/template-dashboard-argon'),
+            __DIR__ . '/../../public' => public_path('vendor/confrariaweb/template-dashboard-argon'),
         ], 'public');
     }
 
