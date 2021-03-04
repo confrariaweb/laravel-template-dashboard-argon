@@ -36,7 +36,13 @@ return [
         'index' => 'Dominios',
         'create' => 'Novo dominio',
         'edit' => 'Editar o dominio',
-        'show' => 'Visualizar o dominio'
+        'show' => 'Visualizar o dominio',
+        'dns' => [
+            'index' => 'DNS',
+            'create' => 'Novo DNS',
+            'edit' => 'Editar o DNS',
+            'show' => 'Visualizar o DNS'
+        ]
     ],
 
     'posts' => [
@@ -63,6 +69,12 @@ return [
         'create' => 'Nova fatura',
         'edit' => 'Editar a fatura',
         'show' => 'Visualizar a fatura'
+    ],
+    'accounts' => [
+        'index' => 'Contas',
+        'create' => 'Nova conta',
+        'edit' => 'Editar conta',
+        'show' => 'Visualizar conta'
     ],
     'plans' => [
         'index' => 'Planos',

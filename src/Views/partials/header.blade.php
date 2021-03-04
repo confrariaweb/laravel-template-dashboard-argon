@@ -1,9 +1,12 @@
 @php
-$currentRouteName = Route::currentRouteName();
-$routeIndex = Str::of($currentRouteName)->replace(['create', 'edit', 'show'], 'index');
-$routeCreate = Str::of($currentRouteName)->replace(['index', 'edit', 'show'], 'create');
-$routeParameters = request()->all();
+    $currentRouteName = Route::currentRouteName();
+    $routeIndex = Str::of($currentRouteName)->replace(['create', 'edit', 'show'], 'index');
+    $routeCreate = Str::of($currentRouteName)->replace(['index', 'edit', 'show'], 'create');
+    $routeGetParameters = request()->all();
+    $routeParameters = Route::current()->parameters();
+    $parametersRoute = array_merge($routeGetParameters, $routeParameters)
 @endphp
+
 <div class="header bg-primary pb-6">
     <div class="container-fluid">
         <div class="header-body">
@@ -19,7 +22,7 @@ $routeParameters = request()->all();
                             </li>
                             @if (Str::contains($currentRouteName, ['create', 'edit', 'show']))
                                 <li class="breadcrumb-item">
-                                    <a href="{{ route("$routeIndex") }}">
+                                    <a href="{{ route("$routeIndex", $parametersRoute) }}">
                                         {{ __('templateDashboardArgon::' . $routeIndex) }}
                                     </a>
                                 </li>
@@ -37,15 +40,15 @@ $routeParameters = request()->all();
                 </div>
                 <div class="col-lg-6 col-5 text-right">
                     @if (Str::contains($currentRouteName, ['create', 'edit', 'show']))
-                        <a href="{{ route("$routeIndex", $routeParameters) }}" class="btn btn-sm btn-neutral">
+                        <a href="{{ route("$routeIndex", $parametersRoute) }}" class="btn btn-sm btn-neutral">
                             {{ __('templateDashboardArgon::' . $routeIndex) }}
                         </a>
                     @endif
                     @if (!Str::contains($currentRouteName, ['create']))
-                    <a href="{{ route("$routeCreate", $routeParameters) }}" class="btn btn-sm btn-neutral">
-                        {{ __('templateDashboardArgon::' . $routeCreate) }}
-                    </a>  
-                    @endif                  
+                        <a href="{{ route("$routeCreate", $parametersRoute) }}" class="btn btn-sm btn-neutral">
+                            {{ __('templateDashboardArgon::' . $routeCreate) }}
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
